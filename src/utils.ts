@@ -1,7 +1,7 @@
 import { parse } from "papaparse";
 
 import { NewsData } from "./components/types";
-import csv from "./assets/newsSource.csv?raw";
+import csv from "./assets/data/newsSource.csv?raw";
 
 export const getNews = (): NewsData[] => {
   const parsed = parse<NewsData>(csv as string, {
