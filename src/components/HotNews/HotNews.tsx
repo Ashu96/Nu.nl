@@ -48,8 +48,8 @@ const HotNewsItem: FC<HotNewsItemProp> = ({ newsData }) => {
         <span className={styles.time}>
           {getTimeFromTimestamp(newsData.timestamp)}
         </span>
-        {newsData.title}
-        <IconChevron />
+        <span className={styles.linkText}>{newsData.title}</span>
+        <IconChevron className={styles.icon} />
       </a>
     </li>
   );

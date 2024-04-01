@@ -1,6 +1,6 @@
 import { FC } from "react";
 
-import "./App.css";
+import styles from "./app.module.css";
 import { NewsProvider } from "./context/NewsContext";
 import { HotNews } from "./components/HotNews/HotNews";
 import { News } from "./components/News/News";
@@ -8,7 +8,7 @@ import { News } from "./components/News/News";
 export const App: FC = () => {
   return (
     <NewsProvider>
-      <main className="main">
+      <main className={styles.layout}>
         <News />
         <HotNews />
       </main>

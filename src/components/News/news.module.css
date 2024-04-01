@@ -2,6 +2,12 @@
   flex: 1 1 66%;
 }
 
+.heading {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: var(--spacing-400);
+}
+
 .newsBanner {
   display: flex;
   justify-content: flex-start;
@@ -10,7 +16,7 @@
   border-radius: 6px;
   height: 300px;
   padding: var(--spacing-200);
-  /* background-image: url(/src/assets/placeholder.jpg); */
+
   font-weight: bold;
   color: #333;
   background-size: cover;

@@ -1,23 +1,28 @@
 import { FC } from "react";
 
-export const IconChevron: FC = () => {
-    return (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="24px"
-        height="24px"
-        viewBox="0 0 24 24"
-        aria-hidden="true"
-        role="img"
-      >
-        <title lang="nl"></title>
-        <g>
+export const IconChevron: FC<{ className?: string }> = ({ className }) => {
+  return (
+    <svg
+      width="16px"
+      height="16px"
+      viewBox="0 0 24 24"
+      data-testid="IconChevron"
+      aria-hidden="true"
+      className={className}
+    >
+      <g transform="rotate(0 12 12)">
+        <g
+          stroke="none"
+          strokeWidth="1"
+          fill="currentColor"
+          fillRule="evenodd"
+        >
           <path
-            fill="currentColor"
-            d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"
+            d="M9.7496212,4.5 L9.7496212,11.999 L17.2496212,12 L17.2496212,15 L9.7496212,14.999 L9.7496212,15 L6.7496212,15 L6.7496212,4.5 L9.7496212,4.5 Z"
+            transform="rotate(-45 12 9.75)"
           ></path>
         </g>
-      </svg>
-    );
-  };
-  
+      </g>
+    </svg>
+  );
+};
