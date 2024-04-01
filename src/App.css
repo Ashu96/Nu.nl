@@ -1,0 +1,28 @@
+:root {
+  --dot-size: 8px;
+  --light-grey: #969696;
+  --dark-grey: #111;
+  --visted-link: #9b59b6;
+  --spacing-50: 4px;
+  --spacing-100: 8px;
+  --spacing-200: 16px;
+  --spacing-300: 24px;
+  --spacing-400: 32px;
+}
+
+ul {
+  padding: 0;
+}
+
+.main {
+  display: flex;
+  justify-content: flex-start;
+  gap: var(--spacing-400);
+
+  background-color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--dark-grey);
+
+  max-width: 990px;
+  margin: 0 auto;
+}
