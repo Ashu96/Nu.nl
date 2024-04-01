@@ -4,9 +4,9 @@ import { NewsData } from "../types";
 import { useNewsContext } from "../../context/NewsContext";
 import styles from "./news.module.css";
 import { getTodayDateTime } from "../../utils";
-import image1 from "../assets/images/placeholder-2.jpg";
-import image2 from "../assets/images/placeholder-3.jpg";
-import image3 from "../assets/images/placeholder-4.jpg";
+import image1 from "../../assets/images/placeholder-2.jpg";
+import image2 from "../../assets/images/placeholder-3.jpg";
+import image3 from "../../assets/images/placeholder-4.jpg";
 
 export const News: FC = () => {
   const data = useNewsContext();
