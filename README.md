@@ -1,3 +1,45 @@
+# Demo app for nu.nl
+A simple news website.
+
+## Getting started
+
+To get started with this application, follow these steps:
+
+1. **Clone the repository**
+
+   Use the following command to clone the repository:
+
+   ```bash
+   git clone <repository-url>
+   ```
+
+2. **Navigate to the project directory**
+
+   Change your current directory to the project directory:
+
+   ```bash
+   cd <project-directory>
+   ```
+
+3. **Install the dependencies**
+
+   Use the following command to install all the necessary dependencies:
+
+   ```bash
+   yarn install
+   ```
+
+4. **Start the development server**
+
+   Run the following command to start the development server:
+
+   ```bash
+   yarn run dev
+   ```
+
+5. **Open the application**
+
+   Open your browser and navigate to `<URL>` shown in the console to view the application.
 
 ## Test plan
 
