@@ -16,7 +16,9 @@ export const News: FC = () => {
 
   return (
     <section className={styles.news}>
-      <h2 className={styles.heading}>{getTodayDateTime()} | Latest Dutch news</h2>
+      <h2 className={styles.heading}>
+        {getTodayDateTime()} | Latest Dutch news
+      </h2>
       <NewsList list={sortedByPopularity} />
     </section>
   );
@@ -54,6 +56,7 @@ const NewsBanner: FC<NewsItemProps> = ({ newsData }) => {
       style={{
         backgroundImage: `url(${getImage()})`,
       }}
+      data-testid="news-banner"
     >
       <a
         className={styles.newsLink + " " + styles.white}
