@@ -12,7 +12,6 @@
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
-  background-color: #f0f0f0;
   border-radius: 6px;
   height: 300px;
   padding: var(--spacing-200);
@@ -25,10 +24,18 @@
   background-position: center;
   margin-bottom: var(--spacing-300);
 
+  box-shadow: var(--shadow-elevation-low);
+  will-change: box-shadow;
+  transition: box-shadow 0.2s ease-in;
+
   a {
-    color: white;
+    color: white !important;
     font-weight: 500;
     font-size: 20px;
+  }
+
+  &:hover {
+    box-shadow: var(--shadow-elevation-medium);
   }
 }
 
